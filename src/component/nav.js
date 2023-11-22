@@ -16,10 +16,10 @@ const Nav = () => {
                     </div>
                     <div className={isActive ? "nav-menu active": 'nav-menu'}>
                         <ul className={isActive? "nav-ul active" :"test" }>
-                            <li><NavLink to="/games">Our games</NavLink></li>
-                            <li><NavLink to="/project">Projects</NavLink></li>
-                            <li><NavLink to="/first">Support</NavLink></li>
-                            <li><NavLink to="/about">About Us</NavLink></li>
+                            <li><a href={'#home'}>ГЛАВНАЯ</a></li>
+                            <li><a href="#about">О НАС</a></li>
+                            <li><a href="#catalog">КАТАЛОГ</a></li>
+                            <li className={'buy-button'}><NavLink to="/buy" >ЗАКАЗАТЬ</NavLink></li>
                         </ul>
                     </div>
                 </div>

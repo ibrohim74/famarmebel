@@ -81,6 +81,13 @@ nav img {
 .nav-menu a:hover{
     color: #FAB162;
 }
+.buy-button{
+    background: #FAB162;
+    padding: 15px;
+    border-radius: 14px;
+
+}
+.buy-button a{  color: black;}.buy-button a:hover{  color: white;}
 @media screen and (max-width: 834px) {
     .nav-container {
         width: 100%;

@@ -3,11 +3,16 @@ import Nav from "../component/nav";
 import '../assets/css/home.css';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "../component/footer";
 const IndexHome = () => {
     return (
         <div>
             <Nav/>
-            <header>
+            <section className="call-buton"><a className="cc-calto-action-ripple" href="tel:+998991234567">
+                <img  src={require('../assets/img/icons8-telephone-45.png')} alt=""/>
+            </a>
+            </section>
+            <header id={'home'}>
                 <div className="header-opacity"></div>
                 <div className="header-content">
                     <div className="logo">
@@ -17,7 +22,7 @@ const IndexHome = () => {
                 </div>
             </header>
 
-            <section className={'home-s2 container'}>
+            <section className={'home-s2 container'} id={'about'}>
                 <div className="s2-box">
                     <div className="s2-item">
                         <div className="s2-left">
@@ -68,7 +73,7 @@ const IndexHome = () => {
                     </div>
                 </div>
             </section>
-            <section className="s1">
+            <section className="s1" id={'catalog'}>
                 <div className="container">
                     <h1 className="s1-h1-txt">Наши работы</h1>
                     <div className="s1-box">
@@ -146,7 +151,7 @@ const IndexHome = () => {
                     </div>
                 </div>
             </section>
-
+                <Footer/>
         </div>
     );
 };
