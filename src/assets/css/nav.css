@@ -1,0 +1,132 @@
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.nav-container {
+    margin-top: 20px;
+    width: 80%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+nav img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.nav-logo {
+    height: 100%;
+}
+
+.nav-account {
+    height: 50%;
+}
+
+.nav-menu {
+    width: 50%;
+
+}
+.nav-menu a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-menu ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-menu ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-btn {
+    height: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-btn button {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    outline: none;
+}
+.nav-menu .nav-account{display: none}
+.nav-menu a:hover{
+    color: #FAB162;
+}
+@media screen and (max-width: 834px) {
+    .nav-container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: relative;
+    }
+.nav-btn{display: flex}
+    .nav-account {
+        display: none;
+    }
+
+    .nav-menu {
+        position: absolute;
+        width: 50%;
+        flex-direction: column;
+        right: -100%;
+        transition: 1s;
+        top: 100%;
+        height: 300px;
+        background: rgba(0,0,0,0.8);
+        border: 3px white solid;
+        border-radius: 10px;
+        display: none;
+        overflow:hidden;
+
+    }
+    .nav-menu a{color: white}
+    .nav-menu.active {
+        right: 0;
+        display: flex;
+    }
+    .nav-ul.active{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .nav-ul.active .nav-account{display: block;
+    height: 30px}
+    nav {
+        height: 60px !important;
+    }
+    .nav-logo {
+        width: 54%;
+        height: 100%;
+        padding-left: 10px;
+    }
+}

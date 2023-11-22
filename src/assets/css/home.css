@@ -1,0 +1,246 @@
+header {
+    background: url(../img/slider_3.jpg) no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.header-opacity {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+header .logo h1 {
+    color: #fab162;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900 !important;
+}
+
+header .logo p {
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.s1 {
+    margin-top: 70px;
+}
+
+.s1-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.s1 a {
+
+    margin: 5px;
+    position: relative;
+    width: 48%;
+    height: 400px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+.s1-item {
+
+    width: 100%;
+    height: 100%;
+
+    color: white;
+    text-align: center;
+}
+
+.s1-item-opacity {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.s1-item-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    width: 100%;
+}
+
+.s1-item-content h1 {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+}
+
+.s1 a:nth-child(1) {
+
+    background: url(../img/slider_3.jpg);
+    width: 40%;
+}
+
+.s1 a:nth-child(2) {
+    background: url(../img/slider_3.jpg);
+    width: 58%;
+}
+
+.s1 a:nth-child(3) {
+    background: url(../img/slider_3.jpg);
+    width: 58%;
+
+}
+
+.s1 a:nth-child(4) {
+    background: url(../img/slider_3.jpg);
+    width: 40%;
+}
+
+.s1 a:nth-child(5) {
+    background: url(../img/slider_3.jpg);
+    width: 40%;
+}
+
+.s1 a:nth-child(6) {
+    background: url(../img/slider_3.jpg);
+    width: 58%;
+}
+.s1 a:nth-child(7) {
+    background: url(../img/slider_3.jpg);
+    width: 58%;
+}
+.s1 a:nth-child(8) {
+    background: url(../img/slider_3.jpg);
+    width: 40%;
+}
+
+
+.s1 a:hover .s1-item-opacity {
+    opacity: 0;
+    transition: 0.8s;
+
+}
+
+.s1 a:hover {
+    overflow: hidden;
+    transition: 0.8s;
+    /*transform: scale(1.1);*/
+    z-index: 1;
+}
+
+.s1 a:hover .s1-item-content {
+    /*display: none;*/
+    color: black;
+}
+.s1-h1-txt {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 29px;
+    color: #fab162;
+    text-align: center;
+    padding: 10px 15px;
+    font-weight: 700;
+}
+
+.s2-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.s2-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.s2-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.s2-item p {
+    margin-bottom: 40px;
+    color: #bbbaba;
+}
+
+.s2-item a {
+    color: black;
+    font-weight: 700;
+    padding: 18px 12px;
+    border-radius: 12px;
+    background: #FFF;
+}
+
+.s2-left {
+    width: 40%;
+}
+
+.s2-right {
+    width: 40%;
+
+}
+
+.home-s2 {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    .s2-item {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .s2-left, .s2-right {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .order-s2 {
+        order: 2;
+    }
+    .s1 .container {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .s1-h1-txt {
+        font-size: 19px;
+    }
+    .s1-box{
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .s1 a{
+        width: 100%!important;
+        height: 200px;
+    }
+}
